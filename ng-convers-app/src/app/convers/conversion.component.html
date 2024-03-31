@@ -1,0 +1,18 @@
+<div>
+  <div [formGroup]="currencyLeft">
+    <label> Валюта №1:
+      <input [formControlName]="'value'" type="number">
+    </label>
+    <select [formControlName]="'type'">
+      <option *ngFor="let currency of availableCurrencies" [ngValue]="currency">{{ currency }}</option>
+    </select>
+  </div>
+  <div [formGroup]="currencyRight">
+    <label>Валюта №2:
+      <input [formControlName]="'value'" type="number">
+    </label>
+    <select [formControlName]="'type'">
+      <option *ngFor="let currency of availableCurrencies" [ngValue]="currency">{{ currency }}</option>
+    </select>
+  </div>
+</div>
