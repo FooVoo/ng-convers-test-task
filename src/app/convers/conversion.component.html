@@ -7,6 +7,9 @@
       <option *ngFor="let currency of availableCurrencies" [ngValue]="currency">{{ currency }}</option>
     </select>
   </div>
+  <div>
+    <button (click)="switchCurrencies()">Switch</button>
+  </div>
   <div [formGroup]="currencyRight">
     <label>Валюта №2:
       <input [formControlName]="'value'" type="number">
@@ -15,4 +18,7 @@
       <option *ngFor="let currency of availableCurrencies" [ngValue]="currency">{{ currency }}</option>
     </select>
   </div>
+</div>
+<div>
+  <span>{{ conversionRate() }}</span>
 </div>

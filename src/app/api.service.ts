@@ -6,7 +6,19 @@ export enum Currency {
   USD = 'USD',
   RUB = 'RUB',
   EUR = 'EUR',
-  GBP = 'GBP'
+  GBP = 'GBP',
+  AMD = 'AMD',
+  AED = 'AED'
+}
+
+// Can be done via translate pipe
+export enum CurrencyTranslations {
+  USD = 'Доллар США',
+  RUB = 'Российский рубль',
+  EUR = 'Евро',
+  GBP = 'Британский фунт',
+  AMD = 'Армянский драм',
+  AED = 'Дирхам'
 }
 
 // API RESULT EXAMPLE
